@@ -14,13 +14,10 @@ export class HttpdService extends UtilHttpService{
 
 
    getFiles<Response>():Observable<any>{
-    console.log("getFiles"); 
-    console.log(this.URL_BASE);
      return super.get(this.URL_BASE);
    }
 
    getById(id:number){
-     console.log(this.URL_BASE + "/" +id);
      return super.get(this.URL_BASE + "/" +id);
    }
 
