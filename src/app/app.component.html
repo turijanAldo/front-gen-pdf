@@ -1,0 +1,167 @@
+<hr>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>File</th>
+        <th>Type</th>
+        <th>Creation Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let file of files">
+        <td>{{file.idEvidence}}</td>
+        <td>{{file.name}}</td>
+        <td><span><i class="fa fa-file-pdf-o" aria-hidden="true"></i></span><button
+            class="btn btn-small btn-outline-danger" (click)="dowloadFile(file.idEvidence)">-></button></td>
+        <td></td>
+        <td>{{file.creationDate}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+
+<div class="container">
+  <!-- <button class="btn btn-green text-roboto" title="Serializar PDF" (click)="getBytes()">Obtener bytes</button> -->
+  <button class="btn btn-green text-roboto" title="Descargar archivo PDF" (click)="saveFile()">Guardar PDF</button>
+</div>
+<hr>
+
+<div id="element-to-print">
+  <div class="container">
+    <h2>Contextual Classes</h2>
+    <p>Contextual classes can be used to color the table, table rows or table cells. The classes that can be used are:
+      .table-primary, .table-success, .table-info, .table-warning, .table-danger, .table-active, .table-secondary,
+      .table-light and .table-dark:</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-success">
+          <td>Success</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr class="table-active">
+          <td>Active</td>
+          <td>Activeson</td>
+          <td>act@example.com</td>
+        </tr>
+        <tr class="table-secondary">
+          <td>Secondary</td>
+          <td>Secondson</td>
+          <td>sec@example.com</td>
+        </tr>
+        <tr class="table-light">
+          <td>Light</td>
+          <td>Angie</td>
+          <td>angie@example.com</td>
+        </tr>
+        <tr class="table-success">
+          <td>Success</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr class="table-dark text-dark">
+          <td>Dark</td>
+          <td>Bo</td>
+          <td>bo@example.com</td>
+        </tr>
+        <tr class="table-primary">
+          <td>Primary</td>
+          <td>Joe</td>
+          <td>joe@example.com</td>
+        </tr>
+        <tr class="table-dark text-dark">
+          <td>Dark</td>
+          <td>Bo</td>
+          <td>bo@example.com</td>
+        </tr>
+        <tr class="table-success">
+          <td>Success</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr class="table-active">
+          <td>Active</td>
+          <td>Activeson</td>
+          <td>act@example.com</td>
+        </tr>
+        <tr class="table-secondary">
+          <td>Secondary</td>
+          <td>Secondson</td>
+          <td>sec@example.com</td>
+        </tr>
+        <tr class="table-light">
+          <td>Light</td>
+          <td>Angie</td>
+          <td>angie@example.com</td>
+        </tr>
+        <tr class="table-success">
+          <td>Success</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr class="table-dark text-dark">
+          <td>Dark</td>
+          <td>Bo</td>
+          <td>bo@example.com</td>
+        </tr>
+        <tr class="table-primary">
+          <td>Primary</td>
+          <td>Joe</td>
+          <td>joe@example.com</td>
+        </tr>
+        <tr class="table-dark text-dark">
+          <td>Dark</td>
+          <td>Bo</td>
+          <td>bo@example.com</td>
+        </tr>
+        <tr class="table-success">
+          <td>Success</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr class="table-secondary">
+          <td>Secondary</td>
+          <td>Secondson</td>
+          <td>sec@example.com</td>
+        </tr>
+        <tr class="table-dark text-dark">
+          <td>Dark</td>
+          <td>Bo</td>
+          <td>bo@example.com</td>
+        </tr>
+        <tr class="table-dark text-dark">
+          <td>Dark</td>
+          <td>Bo</td>
+          <td>bo@example.com</td>
+        </tr>
+        <tr class="table-success">
+          <td>Success</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr class="table-secondary">
+          <td>Secondary</td>
+          <td>Secondson</td>
+          <td>sec@example.com</td>
+        </tr>
+        <tr class="table-primary">
+          <td>Primary</td>
+          <td>Joe</td>
+          <td>joe@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
